@@ -1,0 +1,129 @@
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.log &
+
+
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.log &
+
+/sasdataTP/ambientes/credito/bin /sasdataTP/ambientes/credito/bin/code_m/hola_mundo.py -log /sasdataTP/ambientes/credito/bin/code_m/hola_mundo.log &
+
+
+/sasdataTP/ambientes/credito/bin python3 /sasdataTP/ambientes/credito/bin/code_m/hola_mundo.py > /sasdataTP/ambientes/credito/bin/code_m/hola_mundo.log
+
+/sasdataTP/ambientes/credito/bin/python3 dev_arpu_3.py > /sasdataTP/insumo_modelo_lc/codigos/dev_arpu_3.log
+
+
+/sasdataTP/ambientes/credito/bin/python3 carpeta.py > /sasdataTP/insumo_modelo_lc/codigos/carpeta.log
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/manager_v1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/test_mv1.log
+
+
+/**************************************************************************************************/
+/**********************************manager_v1.sas**************************************************/
+/**************************************************************************************************/
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/manager_v1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/manager_v1.log
+
+/**************************************************************************************************/
+/************************************nombres1.sas**************************************************/
+/**************************************************************************************************/
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.log &
+
+/**************************************************************************************************/
+/************************************prueba_modelo.py**********************************************/
+/**************************************************************************************************/
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_modelo_nombres/Asignacion_Linea_Credito/prueba_modelo.py > /sasdataTP/codigo_modelo_nombres/Asignacion_Linea_Credito/prueba_modelo.log
+
+/**************************************************************************************************/
+/************************************nombres2.sas**************************************************/
+/**************************************************************************************************/
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.log &
+
+/**************************************************************************************************/
+/************************************matrizbase.sas************************************************/
+/**************************************************************************************************/
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/Matriz_base_total.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/ Matriz_base_total.log &
+
+/**************************************************************************************************/
+/************************************Flujo_completo************************************************/
+/**************************************************************************************************/
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/manager_v1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/manager_v1.log
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres1.log 
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_modelo_nombres/prueba_modelo.py > /sasdataTP/codigo_modelo_nombres/prueba_modelo.log
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/nombres2.log 
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/Matriz_base_total.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/Matriz_base_total.log 
+
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/prueba_conexion_redshift.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/prueba_conexion_redshift.log &
+
+
+
+
+1_. Dirigirse a la ruta en donde se va a crear el archivo shell y poner
+            vi {nombre del archivo}.sh
+2-. Presionar i
+3-. introducir código
+4-. Presionar la tecla Esc
+5-. Poner ":"
+5-. Escribir wq
+6-. Para ejecutar el archivo escribir lo siguiente 
+            bash /{ruta del archivo}/{nombre del archivo}.sh &
+7-. Para saber si esta corriendo escribir lo siguiente
+            ps -fea | grep /opt/sas/SASHomeCompute/SASFoundation/9.4/sas
+8-. El segundo argumento que es el número que aparece a lado de sas es el número que vamos a poner en el top
+
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas iMatriz_base_total.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/Matriz_base_total.log 
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_arpu_3.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_arpu_3.log $
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora6meses_4.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora6meses_4.log
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora_4.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora_4.log
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/pruena.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/pruena.log
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/ejecucion_modelo.py > /sasdataTP/ejecucion_modelo.log
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/valores_predeterminados.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/valores_predeterminados.log
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/reporte_comparativo.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/reporte_comparativo.log 
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/cifras_adopcion_digital.py -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/cifras_adopcion_digital.log
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora_4.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora_4.log
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_arpu_3.sh
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora6meses_4.sh
+
+/opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/dev_veces_mora_4.sh
+
+libname AUDIT odbc DATASRC=AmazonRedshift user= inovation_user password= xxxxxx schema= credit_audit;run;
+
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_crmweb/validation_file/prueba_delete_addons.py > /sasdataTP/codigo_crmweb/validation_file/prueba_delete_addons.log &
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_crmweb/validation_file/prueba_register_addons.py > /sasdataTP/codigo_crmweb/validation_file/prueba_register_addons.log &
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/holamundo1.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/holamundo1.log &
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/holamundo2.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/holamundo2.log &
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/ejecucion_procesos_en_paralelo.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/ejecucion_procesos_en_paralelo.log &
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_crmweb/validation_file/addons.py > /sasdataTP/codigo_crmweb/validation_file/addons.log 
+
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_crmweb/validation_file/addons_cien_cuentas.py > /sasdataTP/codigo_crmweb/validation_file/addons_cien_cuentas.log
+
+
+
+/sasdataTP/ambientes/credito/bin/python3 /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/arpu3.py > /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/asignacion_lc/arpu3.log $
