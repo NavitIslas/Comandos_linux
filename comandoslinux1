@@ -1,0 +1,19 @@
+/*
+te dirijes a la ruta y creas posteriormente un programa .sas
+cd /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/score_ciclo
+
+vi score_ciclo.sas -> crea el archivo sas 
+i -> para escribir en el archivo sas
+esc + : -> para dejar de escribir 
+wq -> para guardar y salir
+
+para ejecutar el archivo sas y crear su respectivo log es con el siguiente comando:
+/opt/sas/SASHomeCompute/SASFoundation/9.4/sas /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/score_ciclo/score_ciclo.sas -log /opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/score_ciclo/score_ciclo.log &
+
+top -p ### n_id -> para monitorear el rendimiento y como se esta ejecutando el codigo, cuanta memoria esta ocupando y el tiempo de ejecucion
+
+para revisar el log se usa el siguiente comando:
+/opt/sas/SASHomeCompute/SASFoundation/9.4/code_m/score_ciclo/score_ciclo.log
+
+
+ */
