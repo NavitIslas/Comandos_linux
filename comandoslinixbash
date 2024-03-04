@@ -1,0 +1,14 @@
+1_. Dirigirse a la ruta en donde se va a crear el archivo shell y poner
+            vi {nombre del archivo}.sh
+2-. Presionar i
+3-. introducir código
+4-. Presionar la tecla Esc
+5-. Poner ":"
+5-. Escribir wq
+6-. Para ejecutar el archivo escribir lo siguiente 
+            bash /{ruta del archivo}/{nombre del archivo}.sh &
+  y para ejecutar un programa sheell desde el usuario sas
+            sudo bash /{ruta del archivo}/{nombre del archivo}.sh &
+7-. Para saber si esta corriendo escribir lo siguiente
+            ps -fea | grep /opt/sas/SASHomeCompute/SASFoundation/9.4/sas
+8-. El segundo argumento que es el número que aparece a lado de sas es el número que vamos a poner en el top
