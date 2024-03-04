@@ -1,0 +1,74 @@
+date: Mostrar en la terminal la fecha y hora actual
+vi  /sasdataTP/codigo_crmweb/validation_file/archivo.py  : editar un archivo
+i : para insertar o escribir dentro del archivo creado
+Esc + : wq  para guardar un archivo y salir
+cat /sasdataTP/codigo_crmweb/validation_file/archivo.log: para ver en terminal el log
+ls -ltr :para mostrar la lista de archvios dentro de la ruta en la que te encuentras
+ 
+Agregar una crontab usando el usuario root
+sudo crontab -e
+contrasena : 
+ 
+como listar las tareas que se van a ejecutar en la contab
+sudo crontab -l
+ 
+Agregar una crontab para el usuario de sas
+sudo crontab -e -u sas
+contrasena : 
+ 
+caracteristicas de para la programacion de una tarea en una crontab
+* * * * *  /sasdataTP/codigo_crmweb/validation_file/ archivo.py
+* : minutos [0-59]
+* : horas en formato 24
+*: dias a ejecutar [1-30]
+*: meses [1-12]
+*: dias de la semana donde el 0 es el domingo [0-7]
+Ver en tiempo real como se crea el archivo log generado despues de correr una crontab
+watch -n 1 “tail -f /sasdataTP/codigo_crmweb/validation_file/ archivo.log”
+ 
+Para agregar o imprimir mensajes entro de un archivo .sh se usan los siguientes comandos:
+echo "Finalizo proceso de borrado de addon"
+echo "Hola en la que se ejecuto es: $(date)"
+ 
+Correr un archivo .py en la terminal usando un  ambiente ya creado
+/sasdataTP/ambientes/credito/bin/python3 /sasdataTP/codigo_crmweb/validation_file/register_addons.py > /sasdataTP/codigo_crmweb/validation_file/register_addons.log
+ 
+ 
+Comandos git
+1. Creamos una carpeta en donde queremos guardar el repositorio,
+2. Una vez creada, le damos click derecho y seleccionamos open git bash here
+3. Primero nos vamos a code commit y seleccionamos el repositorio que queremos clonar
+4. Le damos click a clonar url -> clonar HTTPS
+5. Abrir una nueva terminal de git Bash y escribir el código siguiente:
+git clone  url de repositorio  ->  copiar un repositorio junto con todas sus ramas
+6. Si queremos editar algún archivo basta con usar alguno de los siguientes códigos
+code  -> para abrir visual code
+code  nombre_ archivo-> para abrir un arhcivo en visual code
+ 
+git branch ->  ver las ramas
+git checkout -b dev_alex   ->   crear una rama llamada dev_alex
+touch archivo.txt  ->  crear un archivo llamado
+git status ->  mostrar los cambios y modificaciones que se han hecho
+git add archivo.txt  ->  añadir los cambios realizados del archivo
+git config --global user.name  “aayalag”->  para configurar el ambiente y poder verlo desde code commit
+git config --global user.email  “alexander.ayala@totalplay.com.mx “ -> para configurar el ambiente y poder verlo desde code commit
+git commit -m "se creo el archivo txt" -> comentar la subida de un archivo o cambios
+git push origin dev_alex​ -> subir todos los cambios a code commit
+git add .  -> Guardar todos los cambios
+git log -> Muestra todos los cambios en secuencia
+ 
+ 
+Dentro de Visual code para abrir una nueva terminal de git bash seguir los siguientes pasos:
+1. Dar click en Terminal -> nueva terminal
+2. Una vez que se abre la pestaña de la terminal, darle click en la flecha y seleccionar git bash justo como se muestra en la siguiente imagen.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3. Para modificar un archivo que ya tenemos el repositorio le damos en  File -> open folder y seleccionamos la carpeta en donde tenemos el archivo a modificar
+4.
